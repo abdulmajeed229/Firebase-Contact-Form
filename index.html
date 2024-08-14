@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Slab", serif;
+    }
+
+    .main {
+        min-height: 100vh;
+        width: auto;
+
+    }
+
+    .left {
+        min-height: 90vh;
+        width: 50%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .right {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-position: center;
+        min-height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .left h1 {
+        margin: 20px 20px;
+    }
+
+    .left p {
+        color: #808080;
+        margin: 20px 20px;
+    }
+
+    .abc address {
+        color: #808080;
+    }
+
+    .left-center {
+        height: 20%;
+        width: auto;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .abc {
+        height: 100%;
+    }
+
+    .abc p {
+        margin: 0;
+        color: black;
+        color: #808080;
+    }
+
+    .abc span {
+
+        font-weight: 800;
+        font-size: 14px;
+    }
+
+    .form-1 {
+        height: 30px;
+        width: auto;
+        background-color: red;
+    }
+
+    .abc i {
+        font-size: 14px;
+    }
+
+    .form {
+        height: 335px;
+        width: auto;
+        text-align: center;
+
+
+    }
+
+    .form input {
+        width: 95%;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid rgb(211, 206, 206);
+        background-color: transparent;
+        color: black;
+        margin: 5px;
+        outline: none;
+
+    }
+
+    input[type="text"] {
+        color: rgb(0, 0, 0);
+
+    }
+
+    input[type="email"] {
+        color: rgb(0, 0, 0);
+    }
+
+    .form textarea {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 95%;
+        border-bottom: 1px solid rgb(233, 228, 228);
+        resize: none;
+    }
+
+    .form button {
+        border: none;
+
+        width: 95%;
+        height: 40px;
+        background-color: #d5c455;
+        color: white;
+        font-weight: 800;
+        font-size: 15px;
+
+    }
+
+    .form a i {
+        color: #b60000;
+        font-size: 19px;
+        padding: 10px;
+    }
+
+    /* .right img{
+height: 600px;
+width: 900px;
+
+} */
+
+
+    @media only screen and (max-width: 1100px) {
+        .right {
+            display: none;
+        }
+
+        .left {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+
+
+    <div class="container-fluid d-flex align-items-center main">
+        <div class="container left animate__animated animate__fadeInDown">
+
+            <h1>Contact Us</h1>
+            <p>We're open for any suggestion or just to have a chat </p>
+
+            <div class="container-fluid left-center">
+                <div class="container abc">
+                    <i class="fa-solid fa-location-dot"></i> &nbsp;<span>ADDRESS:</span>
+                    <address>198 West 21th Street, Suite &21 New York NY 10016 </address>
+                </div>
+                <div class="container abc">
+                    <i class="fa-solid fa-envelope"></i> &nbsp; <span>EMAIL:</span>
+                    <p>amajeed@gmail.com</p>
+
+                </div>
+                <div class="container abc">
+                    <i class="fa-solid fa-phone"></i>&nbsp;
+                    <span>PHONE:</span>
+                    <p>+92-3112484573</p>
+
+                </div>
+
+            </div>
+            <form action="#" class="form">
+                <input type="text" name="Name" placeholder="Name" id="userName" required>
+
+                <br>
+
+                <input type="email" name="Email" id="userEmail" placeholder="Email" required>
+
+                <br>
+
+                <input type="text" name="Subject" id="userSubject" placeholder="Subject" required>
+
+                <br>
+
+
+                <textarea name="text" id="userComment" cols="63" rows="4" placeholder="Create a message here "
+                    required></textarea>
+
+                <button type="button" id="btn">SEND MESSAGE </button>
+                <br>
+                <a href=""><i class="fa-brands fa-facebook animate__animated animate__backInLeft"></i></a>
+
+                <a href=""><i class="fa-brands fa-twitter animate__animated animate__fadeInUp"></i></a>
+
+                <a href="">
+
+                    <i class="fa-brands fa-instagram   animate__animated animate__backInLeft"></i></a>
+
+                <a href="">
+
+                    <i class="fa-brands fa-linkedin animate__animated animate__backInLeft"></i></a>
+
+                <a href=""><i class="fa-brands fa-youtube  animate__animated animate__fadeInUp"></i></a>
+
+            </form>
+
+
+
+
+
+
+        </div>
+        <div class="container right animate__animated animate__fadeInUp">
+
+
+            <!-- <img src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="..."> -->
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBL8U6_KJs4twvoOe75Ttk28GTt2eC6QuY",
+            authDomain: "form-4f76a.firebaseapp.com",
+            projectId: "form-4f76a",
+            storageBucket: "form-4f76a.appspot.com",
+            messagingSenderId: "572232649443",
+            appId: "1:572232649443:web:e3f23d17be7ff6681c53d6"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+
+
+
+        import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+
+
+
+
+
+        btn.addEventListener('click', async function () {
+
+            let userName = document.getElementById('userName').value;
+            let userEmail = document.getElementById('userEmail').value;
+            let userSubject = document.getElementById('userSubject').value;
+            let userComment = document.getElementById('userComment').value;
+            let btn = document.getElementById('btn');
+
+
+
+            try {
+                const docRef = await addDoc(collection(db, "UserContactData"), {
+                    userName: userName ,
+                    userEmail: userEmail,
+                    userSubject: userSubject ,
+                    userComment : userComment
+                });
+
+                // console.log("Document written with ID: ", docRef.id);
+
+                alert('Successful')
+
+            } catch (e) {
+                // console.error("Error adding document: ", e);
+
+                alert('Failed')
+            }
+
+        })
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
